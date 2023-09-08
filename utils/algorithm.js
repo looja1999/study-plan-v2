@@ -32,7 +32,6 @@ const algorithm = (selectUnits, year, semester) => {
         }
     );
 
-    console.log(completedCourse)
 
     for (let i = +year; i < studyPlan.length; i++) {
         for (let j = 2; j > 0; j--) {
@@ -107,7 +106,7 @@ const algorithm = (selectUnits, year, semester) => {
         }
     };
 
-    console.log(studyPlan)
+    return (studyPlan)
 }
 
 export default algorithm
