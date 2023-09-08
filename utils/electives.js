@@ -4,7 +4,7 @@ const electives = (selectUnits) => {
     const completedUnits = selectUnits;
 
     const allElectives = courses.filter(course => course.unitType === 'SE');
-    const eligibleElectives = allElectives.filter(elective => elective.unitDependency.length === 0)
+    const eligibleElectives = allElectives.filter(elective => elective.unitDependency.length === 0 && !completedUnits.includes(elective.unitCode))
 
     allElectives.map(
         elective => {
@@ -19,7 +19,7 @@ const electives = (selectUnits) => {
                     }
                 )
 
-                if (tempDependencyCheck.length === totalDependency) {
+                if (tempDependencyCheck.length === totalDependency && !completedUnits.includes(elective.unitCode)) {
                     eligibleElectives.push(elective)
                 }
             }

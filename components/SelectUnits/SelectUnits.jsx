@@ -30,7 +30,7 @@ const SelectUnitsComponent = ({
         </div>
       </div>
 
-      <div className=" p-4 flex gap-6 flex-col border rounded-md">
+      <div className=" p-4 flex gap-6 flex-col border rounded-md border-dashed">
         <h1 className="font-bold">Year 1</h1>
         <div className="grid grid-cols-2 gap-6 md:gap-10">
           <List
@@ -49,7 +49,7 @@ const SelectUnitsComponent = ({
           />
         </div>
       </div>
-      <div className=" p-4 flex gap-6 flex-col border rounded-md">
+      <div className=" p-4 flex gap-6 flex-col border rounded-md border-dashed">
         <h1 className="font-bold">Year 2</h1>
         <div className="grid grid-cols-2 gap-6 md:gap-10">
           <List
@@ -68,7 +68,7 @@ const SelectUnitsComponent = ({
           />
         </div>
       </div>
-      <div className=" p-4 flex gap-6 flex-col border rounded-md">
+      <div className=" p-4 flex gap-6 flex-col border rounded-md border-dashed">
         <h1 className="font-bold">Year 3</h1>
         <div className="grid grid-cols-2 gap-6 md:gap-10">
           <List
